@@ -198,7 +198,6 @@ class StoriesSlider {
                 <div class="player-wrapper__story-info-title">${story.name}</div>
                 <div class="player-wrapper__story-info-date"></div>
               </div>
-                ${this.preloader()}
                 ${this.storiesTextUnderVideo()}
           </div>
         </div>
@@ -539,7 +538,7 @@ getGoodsTemplate() {
   init() {
     this.makeStoriesCircles();
     this.getDataTime();
-    this.preloader();
+    // this.preloader();
     // this.ifGonePage();
     // this.showChunkGoods();
     this.makeStoriesModal(this.makeStoriesTemplate());
